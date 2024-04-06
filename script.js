@@ -7,12 +7,4 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-describe('Test Page', () => {
-  const baseUrl = 'http://example.com'; // Replace 'http://example.com' with your actual base URL
-
-  it('Should verify absence of child elements in the body tag', () => {
-    cy.visit(baseUrl);
-    cy.get('body').children().should('not.exist');
-  });
-});
 
